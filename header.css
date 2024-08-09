@@ -1,0 +1,35 @@
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Change from center to space-between */
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Center items in the ul */
+    flex: 1; /* Allow ul to take up available space */
+}
+
+header ul li {
+    margin: 0 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header ul li a {
+    color: rgb(15, 11, 11);
+    text-decoration: none;
+}
+
+.Logo {
+    width: 65px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    cursor: pointer;
+}
+

@@ -1,0 +1,109 @@
+body {
+    background-color:rgb(233, 229, 229);
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.first_Background {
+    width: 100%;
+    height: 75vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 68%, rgba(0,0,0,0.1292892156862745) 82%);
+    position: relative;
+}
+
+.backgroundphoto-container {
+    max-width: 65%;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    border: 0px solid rgba(231, 231, 231, 0.445);
+    
+    align-items: center;
+    margin-left: 18%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+}
+
+#BGP {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    border-radius: 0 0 10px 10px;
+}
+
+#backgroundphotoInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.profile-container {
+    position: absolute;
+    bottom: 100px; /* Adjust as needed */
+    left: 26%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(231, 231, 231, 0.445);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.profile-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none; /* Hide the image by default */
+}
+
+#profilePictureInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+h1 {
+    margin-top: 25px;
+    margin-left: 35%;
+    font-size: 3em;
+}
+
+h4 {
+    margin-top: 5px;
+    margin-left: 35.5%;
+    font-weight: 100;
+}
+
+p {
+    color: #00000052;
+    align-items: center;
+    margin-left: 18%;
+}
+
+ul {
+    padding-left: 20em;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    margin: 15px; /* 10px space around each <li> */
+    font-size: 20px;
+    cursor: pointer;
+}

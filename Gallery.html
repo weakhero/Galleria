@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Gallery.css">
+    <link rel="stylesheet" href="header.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<body>
+
+    <header>
+        <a href="Timeline.html"><img class="Logo" src="./MyLOGO.png" alt=""></a>
+       <ul>
+           <li><a href="Timeline.html"><i class='bx bxs-home' ></i> Home</a></li>
+           <li><a href="Gallery.html"><i class='bx bxs-photo-album' ></i> Gallery</a></li>
+           <li><a href="#"><box-icon name='headphone'><i class='bx bx-headphone'></i></box-icon> Hobbies</a></li>
+           <li><a href="#"><i class='bx bxs-hot' ></i> About Us</a></li>
+           <li><a href="profilepage.html"><i class='bx bxs-paper-plane' ></i> Soc Media</a></li>
+       </ul>
+   </header>
+<div id="bodycontainer">
+        <div class="box">
+            <div style="--v: 1;"><img src="01.jpg"></div>
+            <div style="--v: 2;"><img src="02.jpg"></div>
+            <div style="--v: 3;"><img src="03.jpg"></div>
+            <div style="--v: 4;"><img src="04.jpg"></div>
+            <div style="--v: 5;"><img src="05.jpg"></div>
+            <div style="--v: 6;"><img src="06.jpg"></div>
+            <div style="--v: 7;"><img src="01.jpg"></div>
+            <div style="--v: 8;"><img src="02.jpg"></div>
+            <div style="--v: 9;"><img src="01.jpg"></div>
+        </div>
+        <div class="box">
+            <div style="--v: 1;"><img src="01.jpg"></div>
+            <div style="--v: 2;"><img src="02.jpg"></div>
+            <div style="--v: 3;"><img src="03.jpg"></div>
+            <div style="--v: 4;"><img src="04.jpg"></div>
+            <div style="--v: 5;"><img src="05.jpg"></div>
+            <div style="--v: 6;"><img src="06.jpg"></div>
+            <div style="--v: 7;"><img src="01.jpg"></div>
+            <div style="--v: 8;"><img src="02.jpg"></div>
+            <div style="--v: 9;"><img src="01.jpg"></div>
+        </div>
+        <div class="box">
+            <div style="--v: 1;"><img src="01.jpg"></div>
+            <div style="--v: 2;"><img src="02.jpg"></div>
+            <div style="--v: 3;"><img src="03.jpg"></div>
+            <div style="--v: 4;"><img src="04.jpg"></div>
+            <div style="--v: 5;"><img src="05.jpg"></div>
+            <div style="--v: 6;"><img src="06.jpg"></div>
+            <div style="--v: 7;"><img src="01.jpg"></div>
+            <div style="--v: 8;"><img src="02.jpg"></div>
+            <div style="--v: 9;"><img src="01.jpg"></div>
+        </div>
+        <div class="box">
+            <div style="--v: 1;"><img src="01.jpg"></div>
+            <div style="--v: 2;"><img src="02.jpg"></div>
+            <div style="--v: 3;"><img src="03.jpg"></div>
+            <div style="--v: 4;"><img src="04.jpg"></div>
+            <div style="--v: 5;"><img src="05.jpg"></div>
+            <div style="--v: 6;"><img src="06.jpg"></div>
+            <div style="--v: 7;"><img src="01.jpg"></div>
+            <div style="--v: 8;"><img src="02.jpg"></div>
+            <div style="--v: 9;"><img src="01.jpg"></div>
+        </div>
+        <div class="box">
+            <div style="--v: 1;"><img src="01.jpg"></div>
+            <div style="--v: 2;"><img src="02.jpg"></div>
+            <div style="--v: 3;"><img src="03.jpg"></div>
+            <div style="--v: 4;"><img src="04.jpg"></div>
+            <div style="--v: 5;"><img src="05.jpg"></div>
+            <div style="--v: 6;"><img src="06.jpg"></div>
+            <div style="--v: 7;"><img src="01.jpg"></div>
+            <div style="--v: 8;"><img src="02.jpg"></div>
+            <div style="--v: 9;"><img src="01.jpg"></div>
+        </div>
+        <div class="box">
+            <div style="--v: 1;"><img src="01.jpg"></div>
+            <div style="--v: 2;"><img src="02.jpg"></div>
+            <div style="--v: 3;"><img src="03.jpg"></div>
+            <div style="--v: 4;"><img src="04.jpg"></div>
+            <div style="--v: 5;"><img src="05.jpg"></div>
+
+
+</div>
+  </body>
+    <script>
+        $(document).ready(function(){
+            $('.box div').click(function(){
+                if($(this).hasClass('spin')){
+                    $('.box div').removeClass('spin');}
+                else{
+                    $('.box div').removeClass('spin');
+                    $(this).addClass('spin');
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

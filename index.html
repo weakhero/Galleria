@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="Script.js">
+  <style>
+    /* CSS to prevent text selection and change cursor */
+    h1 {
+      user-select: none; /* Disable text selection */
+      cursor: default; /* Change cursor to default */
+    }
+  </style>
+</head>
+<body>  
+  <form id="loginForm" class="wrapper"> 
+    <img class="logo" src="NewLogo.png" alt="">
+
+    <div class="input-box">
+      <input type="text" id="username" placeholder="Enter Month" required>
+      <i class='bx bx-calendar'></i>
+      <div id="errorMessage">Who the hell are you?</div>
+    </div>
+
+    <div class="input-box">
+      <input type="password" id="password" placeholder="Enter password" required>
+      <i class='bx bx-calendar-heart'></i>
+      <div id="errorPassword">you are not my love bitch!</div>
+    </div>
+
+    <div class="remember-forgot">
+      <label><input type="checkbox"> Remember Me</label>
+      <a href="Forgot-monthsary.html"> Forgot monthsary?</a>
+    </div>
+
+    <button type="submit" class="btn">Login</button>
+
+    <a href="Timeline.html" id="secretLink" style="display: none;"> SecretLink </a>
+
+    <div class="register-link">
+      <p>End this relationship?  <a href="#"> Reason</a></p>
+    </div>
+  </form>
+<script src="Validity.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  display: flex;
+}
+
+#header {
+  background: rgb(75,75,78);
+  background: linear-gradient(309deg, rgba(75,75,78,1) 10%, rgba(168,100,250,1) 40%);
+  background-size: cover;
+  background-position: center;
+  width: 13%;
+  height: 100vh;
+  border-right: 0.1px solid #d4d1d1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Logo {
+  filter: invert(100%);
+  width:70%;
+  margin: 20px 50px 50% 40px;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  padding-left: 25%;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+nav ul li {
+  font-family:inherit;
+  font-optical-sizing: auto;
+  font-weight:550;
+  font-style:normal;
+  width: 100%;
+  margin: 30px 0;
+}
+
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  position:relative;
+  display:contents; 
+  width: 100%;
+  text-align: center;
+}
+
+
+
+nav ul li a:hover {
+  color: wheat;
+}
+
+.icon {
+  display:inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #6819cfec;
+  color: rgba(255, 255, 255, 0);
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  cursor: pointer;
+  border: 0.2px solid white;
+  position: fixed;
+  bottom: 40px;
+  left: 50px;
+}
+
+.icon i {
+  font-size: 22px;
+  color: white;
+}
+
+.icon i:hover{
+  color: wheat;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  bottom: 70px; /* Adjust based on the icon size and spacing */
+  left: 20px; /* Adjust to align with the icon */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  min-width: 120px;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #333;
+}
+
+
+
+/*-----------------------This is for Center div-------------------*/
+
+#CenterDiv {
+  padding: 5px;
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  width: 65%;
+  max-height: 100vh; /* full height of viewport */
+  background-color: white; /* for visualization */
+  
+}
+
+.Center {
+  height: 100vh; /* adjust as needed */
+  width: 100%;
+  overflow-y: auto; /* enables vertical scrolling */
+  background-color: rgb(247, 240, 247); /* for visualization */
+  padding: 20px; /* for visualization */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* optional for better visibility */
+}
+
+.story-container {
+  padding: 5%;
+  max-height: fit-content;
+  width: 100%;
+  background-color:  rgb(247, 240, 247);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.upload-div {
+  position: relative; /* Make it relative to adjust child elements */
+  box-shadow: #050505;
+  border: 1px solid #686868b7;
+  padding: 10px;
+  height: 25vh;
+  width: 13%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* Add pointer cursor */
+  background-size: cover; /* Ensure background image covers the div */
+  background-position: center; /* Center the background image */
+}
+
+h1 {
+  padding-left: 17%;
+  margin-bottom: -5%;
+  font-family: 'Arial', sans-serif;
+  color: rgb(44, 41, 38);
+  font-style: italic;
+}
+#Storybutton{
+  margin-top: 30px;
+  margin-left:19.5rem;
+  border-radius: 50%;
+  border: none;
+  color: rgb(121, 54, 245);
+  font-size: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 1px #050505;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Storybutton:hover {
+  color: #6103a0;
+}
+
+.Createblog {
+  margin-left: 19%;
+}
+
+#Blogs {
+  background-color: rgb(247, 240, 247);
+  height: 30px;
+  width: 70%;
+  border-radius: 50em;
+  border: 0.5px solid rgb(8, 8, 8);
+  padding: 5px 10px;
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  font-size: 17px;
+}
+
+#Blogs:focus {
+  outline: none;
+  border: 1px solid rgb(31, 30, 30);
+  box-shadow: 0 0 5px rgba(212, 116, 212, 0.534);
+}
+
+input::-webkit-input-placeholder {
+  padding-left: 15px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #888888;
+  font-style: italic;
+}
+
+.post-button {
+  background-color: #6819cfec;
+  display: inline-block;
+  padding: 10px 20px; 
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.post-button:hover {
+  background-color: #6103a0;
+}
+
+
+#blogContainer {
+  padding: 10px;
+  background-color: rgb(247, 240, 247);;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  margin: 20px 0; /* Add vertical space between blog posts*/
+}
+
+.blogPost {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  word-wrap: break-word; /* ensures long words break onto next line */
+  overflow-wrap: break-word; /* prevents text overflow */
+  white-space: pre-wrap; /* preserves white space and line breaks */
+  text-align: left; /* optional: align text to left */
+  max-width: 100%;
+  max-height: fit-content; /* ensures the div does not exceed its container */
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------This is for Right div-------------------*/
+
+#Rightdiv {
+  width: 22%;
+  height: 100vh;
+  background-color:  rgb(247, 240, 247);
+  box-shadow: 0 0 10px #6c31db;
+  display: flex;
+  flex-direction: column; /* Ensure content stacks vertically */
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center; /* Center horizontally */
+  padding-top: 5%; /* Adjust as needed */
+  position: relative; /* Ensure relative positioning for child elements */
+  transition: all 0.3s ease; /* Smooth transition for positioning */
+}
+
+#map {
+  margin-top: 100px;
+  width: 33em;
+  height: 30vh;
+  border: 1px solid rgba(141, 96, 247, 0.753);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.box {
+  position: relative;
+  height: 130px;
+  width: 70px;
+  transform-style: preserve-3d;
+  animation: animate 22s linear infinite;
+  top: 0; /* Initial position */
+  transition: all 0.3s ease; /* Smooth transition for positioning */
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(1500px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1500px) rotateY(360deg);
+  }
+}
+
+
+.box div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 130px;
+  width: 70px;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transform: rotateY(calc(var(--v) * 45deg)) translateZ(120px);
+  -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, rgba(12, 12, 12, 0.164));
+  border-radius: 5px; /* Added border radius */
+}
+
+.box div img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px; /* Added border radius */
+}
+
+#core-memories-button {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  font-size: 1.5em; /* Equivalent to <H3> size */
+  padding: 10px 20px; 
+  color: rgb(20, 20, 20); /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer/hand icon on hover */
+}
+
+#core-memories-button:hover {
+  color: #6103a0; /* Darker green on hover */
+}
+

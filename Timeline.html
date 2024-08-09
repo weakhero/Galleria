@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,0,200" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+    <title>timeline</title>
+
+    <link rel="stylesheet" href="Timeline.css">
+</head>
+<body>
+    <!--------------------left Div----------------> 
+
+<div id="header">
+        <div class="container">
+                <nav>
+                    <img src="NewLogo.png" class="Logo">
+                <ul>
+                    <li><a href="Timeline.html"><i class='bx bxs-home' ></i> Home</a></li>
+                    <li><a href="Gallery.html"><i class='bx bxs-photo-album' ></i> Gallery</a></li>
+                    <li><a href="#"><box-icon name='headphone'><i class='bx bx-headphone'></i></box-icon> Hobbies</a></li>
+                    <li><a href="#"><i class='bx bxs-hot' ></i> About Us</a></li>
+                    <li><a href=""><i class='bx bxs-paper-plane' ></i> Soc Account</a></li>
+                </ul>
+                <a class="icon" href="#" onclick="toggleMenu()">
+                    <i class='bx bx-user' ></i>
+                  </a>
+
+                 </nav> 
+                 <div class="dropdown-menu" id="userDropdown">
+                    <a href="profilepage.html" onclick="goToProfile()">Go to Profile</a>
+                    <a href="#" onclick="logout()">Logout</a>
+                 </div>
+        </div>
+ </div>
+
+    <!--------------------Cencer Div---------------->
+
+ <div id="CenterDiv">
+
+    <div class="Center">
+
+      <h1>Stories</h1> 
+      <button id="Storybutton"><i class='bx bxs-plus-circle'></i></button>
+      <input type="file" id="fileInput" accept="image/*" style="display: none;">
+      
+      <div class="story-container"> 
+        <div class="upload-div" id="d1  "></div>
+        <div class="upload-div" id="d2"></div>
+        <div class="upload-div" id="d3"></div>
+        <div class="upload-div" id="d4"></div>
+        <div class="upload-div" id="d5"></div>
+
+      </div>
+
+      <div class="Createblog">
+        <button onclick="createBlog()" class="post-button"><i class='bx bx-link-alt'></i></button>
+        <input type="text" name="Blogs" placeholder="What's New?..... "  id="Blogs">
+      </div>
+     <div id="blogContainer">
+      
+    </div>
+  </div>
+</div>
+
+<script src="timeline.js"></script>
+
+
+
+
+
+
+
+    <!--------------------Right div---------------->
+
+<div id="Rightdiv">
+    <button type="button" id="core-memories-button">CORE MEMORIES</button>
+    <input type="file" id="Input" accept="image/*" style="display: none;">
+        <div class="box"> 
+            <div class="CoreUpload" id="core1" style="--v: 1;"><img src=""></div>
+            <div class="CoreUpload" id="core2" style="--v: 2;"><img src=""></div>
+            <div class="CoreUpload" id="core3" style="--v: 3;"><img src=""></div>
+            <div class="CoreUpload" id="core4" style="--v: 4;"><img src=""></div>
+            <div class="CoreUpload" id="core5" style="--v: 5;"><img src=""></div>
+            <div class="CoreUpload" id="core6" style="--v: 6;"><img src=""></div>
+            <div class="CoreUpload" id="core7" style="--v: 7;"><img src=""></div>
+            <div class="CoreUpload" id="core8" style="--v: 8;"><img src=""></div>
+            <div class="CoreUpload" id="core9" style="--v: 9;"><img src=""></div>
+        </div>
+
+
+        <div id="map"></div>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="map.js"></script>
+
+</div>       
+</body>
+
+
+
+
+
+
+
+
+
+<!---------------All Script that need by this code --------------->
+                
+<script>
+          function toggleMenu() {
+            const dropdownMenu = document.getElementById("userDropdown");
+            const isMenuOpen = dropdownMenu.style.display === "block";
+
+            if (isMenuOpen) {
+                dropdownMenu.style.display = "none";
+            } else {
+                dropdownMenu.style.display = "block";
+            }
+        }
+
+        function goToProfile() {
+            console.log("Go to Profile clicked");
+            toggleMenu(); 
+        }
+
+        function logout() {
+            console.log("Logout clicked");
+            toggleMenu();
+            window.location.href = "index.html";
+            history.replaceState(null, null, "index.html");
+        }
+
+        document.addEventListener("click", function(event) {
+            const dropdownMenu = document.getElementById("userDropdown");
+            const userCircle = document.querySelector(".icon");
+
+            if (!dropdownMenu.contains(event.target) && !userCircle.contains(event.target)) {
+                dropdownMenu.style.display = "none";
+            }
+        });
+
+ //--------------------Core Memories--------------//       
+        $(document).ready(function(){
+            $('.box div').click(function(){
+                if($(this).hasClass('spin')){
+                    $('.box div').removeClass('spin');}
+                else{
+                    $('.box div').removeClass('spin');
+                    $(this).addClass('spin');
+                }
+            });
+        });
+    
+
+
+   
+ </script>
+                                  
+</html>
